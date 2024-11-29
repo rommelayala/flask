@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Criptomonedas</title>
+</head>
+<body>
+    <h1>Precios de Criptomonedas</h1>
+    <form action="/submit" method="post">
+        <input type="text" name="username" placeholder="Tu nombre">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Datos de Binance</h2>
+    {% if data_cripto.error %}
+        <p>{{ data_cripto.error }}</p>
+    {% else %}
+        <ul>
+            {% for cripto in data_cripto %}
+                <li>{{ cripto.symbol }}: {{ cripto.price }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
