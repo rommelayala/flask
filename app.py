@@ -1,17 +1,17 @@
 from flask import Flask, render_template
 from services.binance import data_cripto
-
-
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
+Bootstrap(app)
 
 @app.route('/')
 def home():
-    return render_template('index.html', title="Rommel", message="¡Bienvenido a Flask!")
+    return render_template('index.html', nombre="Rommel", message="¡Bienvenido a Flask!")
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('about.html',nombre='Rommel')
 
 
 @app.route('/cripto', methods=['GET'])

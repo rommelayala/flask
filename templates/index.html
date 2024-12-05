@@ -1,11 +1,6 @@
-{% extends 'base.html' %}
-
-
-<html>
-<head>
-    <title>{{ title }}</title>
-</head>
-<body>
-    <h1>{{ message }}</h1>
-</body>
-</html>
+{% extends "bootstrap/base.html" %}
+{% block title %}Bienvenido {{nombre}}{% endblock %}
+{% block content %}
+    <h2>Inicio</h2>
+    <h3> {{ message }} </h3>
+{% endblock %}
