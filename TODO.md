@@ -1,7 +1,8 @@
-https://plataforma.josedomingo.org/pledin/cursos/flask/curso/u18/index.html
+https://plataforma.josedomingo.org/pledin/cursos/flask/index.html
 
 
 #### --------------------------------------------------------------------------------------------------------------------
+https://plataforma.josedomingo.org/pledin/cursos/flask/curso/u18/index.html
 # Instalación de Flask-BootstrapPermalink
 
 Con nuestro entorno virtual activado:
@@ -77,3 +78,5 @@ Añadiendo el idioma español en los atributos de <html>:
 
 `{% block html_attribs %} lang="es"{% endblock %}`
 
+#### --------------------------------------------------------------------------------------------------------------------
+Añadiento tabla

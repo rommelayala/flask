@@ -8,6 +8,7 @@ def data_cripto():
     try:
         response = requests.get(url_binance)
         response.raise_for_status()  # Lanza excepción si hay errores
+        print(response.json())
         return response.json()  # Retorna los datos como JSON
     except requests.RequestException as e:
         print(f"Error al obtener datos: {e}")
